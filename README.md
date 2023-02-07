@@ -29,3 +29,10 @@ _For example: a user may have id, name, email, phone_
 Your proposal is to be submitted AFTER the Portfolio Project Requirements and Repo have been shared with you in class. 
 
 Please submit your proposal in a **group message with JD && Carlos** via Slack.
+
+## Proposal:
+**Topic/Idea** -- A travel journal/diary app. I am studying how to implement React Simple Map, and a geocoding API. Ideally I would like to have a world map with markers and annotation linked to countries/cities visited.
+**3 User Stories** --  As a user you start by signing up or logging into your profile. As a user you may visit an index page with a list of trips linked to your account. As a user you may visit a more detailed show page for a specifi trip. As a user you may add/edit/delete trips.
+**Wireframes** -- 
+**ERD** -- users -> id SERIAL PRIMARY KEY, fullName TEXT NOT NULL, email TEXT NOT NULL, username TEXT NOT NULL, password TEXT NOT NULL // trips -> id SERIAL PRIMARY KEY, location TEXT NOT NULL, descriptin TEXT, travelCompanions TEXT, favoriteMeal TEXT, is_favorite BOOL, user_id INTEGER REFERENCES users (id) ON DELETE CASCADE
+This is the general idea for the DB, will add more fields. Maybe more tables.
